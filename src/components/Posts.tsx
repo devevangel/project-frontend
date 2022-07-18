@@ -19,6 +19,7 @@ const Posts = () => {
             .get(`https://blooming-badlands-35254.herokuapp.com/api/v1/posts`, {
                 headers: {
                     "content-type": "application/json",
+                    "Access-Control-Allow-Origin": "*",
                     Authorization: `Bearer ${token}`,
                 },
             })

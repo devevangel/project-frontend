@@ -31,6 +31,7 @@ const Signup = ({ setAuthState, history }: any) => {
             .post(`https://blooming-badlands-35254.herokuapp.com/api/v1/users/signup`, userData, {
                 headers: {
                     "content-type": "application/json",
+                    "Access-Control-Allow-Origin": "*"
                 },
             })
             .then((response: any) => {
