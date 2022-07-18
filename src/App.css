@@ -1,38 +1,170 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.auth-page {
+  width: 100%;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+.add-page {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup-container {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid grey;
+}
+
+.signin-container {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid grey;
+}
+
+.form-title {
+  text-align: center;
+  font-weight: bold;
+}
+
+.form-group {
+  margin-bottom: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.auth-direction {
+  color: rgb(49, 49, 236);
+}
+
+.auth-direction:hover {
+  cursor: pointer;
+  color: rgb(22, 22, 255);
+}
+
+.form-input {
+  border: 1px solid rgb(70, 70, 67);
+  padding: 5px;
+  width: 100%;
+}
+
+.header-container {
+  width: 100%;
+  height: 100px;
+  background-color: rgb(22, 21, 21);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.nav-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav-logo {
+  margin-left: 15px;
+  color: rgb(69, 179, 47);
+}
+
+.nav-logo:hover {
+  cursor: pointer;
+  color: rgb(64, 201, 37);
+}
+
+.nav-item {
+  margin-right: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 30px;
+}
+
+.me {
+  font-size: 20px;
+}
+
+.me:hover {
+  cursor: pointer;
+  color: rgb(27, 27, 240);
+}
+
+.logout:hover {
+  cursor: pointer;
+}
+
+.avatar-container {
+  width: 40px;
+  height: 40px;
+  background-color: aquamarine;
+  border-radius: 50%;
+  display: flex;
+}
+
+.avatar {
+  width: 100%;
+  height: 100%;
+}
+
+.post-main {
+  margin-top: 10px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.post-container {
+  width: 80%;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 10px;
+  row-gap: 10px;
+  padding: 5px;
+  justify-content: center;
+}
+
+.post-item {
+  width: 250px;
+  height: 350px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  padding: 3px;
+  position: relative;
+  row-gap: 10px;
+}
+
+.post-photo-container {
+  width: 250px;
+  height: 200px;
+}
+
+.post-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.post-description {
+  width: 100%;
+  inline-size: 150px;
+  overflow: hidden;
+}
+
+.post-date {
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
